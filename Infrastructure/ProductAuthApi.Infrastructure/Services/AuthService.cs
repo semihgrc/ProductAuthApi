@@ -3,12 +3,6 @@ using ProductAuthApi.Application.Repositories;
 using ProductAuthApi.Application.Services.Auth;
 using ProductAuthApi.Application.Services.Token;
 using ProductAuthApi.Domain.Entities;
-using BCrypt.Net;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProductAuthApi.Infrastructure.Services
 {
@@ -33,7 +27,7 @@ namespace ProductAuthApi.Infrastructure.Services
 
 			var existingEmail = await _userReadRepository.GetSingleAsync(u => u.Email == dto.Email);
 			if (existingEmail != null)
-				throw new Exception("İsim alınmış");
+				throw new Exception("mail alınmış");
 
 			var existingName = await _userReadRepository.GetSingleAsync(u => u.FullName == dto.FullName);
 			if (existingName != null)
