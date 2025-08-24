@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProductAuthApi.Application.Repositories
 {
-	public interface IProductWriteRepository : IWriteRepository<Product>
+	public interface IUserWriteRepository : IWriteRepository<User>
 	{
 	}
 }

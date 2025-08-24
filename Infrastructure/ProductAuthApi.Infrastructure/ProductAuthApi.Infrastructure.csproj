@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\Core\ProductAuthApi.Application\ProductAuthApi.Application.csproj" />
     <ProjectReference Include="..\ProductAuthApi.Persistance\ProductAuthApi.Persistance.csproj" />
   </ItemGroup>

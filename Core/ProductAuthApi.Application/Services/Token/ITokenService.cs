@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductAuthApi.Application.Repositories
+namespace ProductAuthApi.Application.Services.Token
 {
-	public interface IProductWriteRepository : IWriteRepository<Product>
+	public interface ITokenService
 	{
+		string GenerateToken(User user);
 	}
 }

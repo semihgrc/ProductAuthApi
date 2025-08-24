@@ -1,17 +1,17 @@
-﻿using ProductApi.Application.Repositories;
-using ProductApi.Domain.Entities;
-using ProductApi.Persistance.Contexts;
+﻿using ProductAuthApi.Application.Repositories;
+using ProductAuthApi.Domain.Entities;
+using ProductAuthApi.Persistance.Contexts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductApi.Persistance.Repositories
+namespace ProductAuthApi.Persistance.Repositories
 {
 	public class ProductWriteRepository : WriteRepository<Product>, IProductWriteRepository
 	{
-		public ProductWriteRepository(ProductApiDbContext context) : base(context)
+		public ProductWriteRepository(ProductAuthApiDbContext context) : base(context)
 		{
 
 		}

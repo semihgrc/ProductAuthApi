@@ -1,11 +1,11 @@
-﻿using ProductApi.Domain.Entities.Common;
+﻿using ProductAuthApi.Domain.Entities.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductApi.Domain.Entities
+namespace ProductAuthApi.Domain.Entities
 {
 	public class Product : BaseEntity
 	{

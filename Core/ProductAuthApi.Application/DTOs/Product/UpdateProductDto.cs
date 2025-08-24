@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductApi.Application.DTOs.Product
+namespace ProductAuthApi.Application.DTOs.Product
 {
 	public class UpdateProductDto
 	{

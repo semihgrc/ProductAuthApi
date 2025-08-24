@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace ProductAuthApi.Persistance.Repositories
 {
-	public class ProductReadRepository : ReadRepository<Product>, IProductReadRepository
+	internal class UserWriteRepository : WriteRepository<User>, IUserWriteRepository
 	{
-		public ProductReadRepository(ProductAuthApiDbContext context) : base(context)
+		public UserWriteRepository(ProductAuthApiDbContext context) : base(context)
 		{
 		}
 	}
