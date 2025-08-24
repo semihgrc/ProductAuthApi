@@ -43,9 +43,12 @@ builder.Services.AddAuthentication(options =>
 		IssuerSigningKey = new SymmetricSecurityKey(key)
 	};
 });
-
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+	options.Configuration = builder.Configuration["Redis:Configuration"];
+	options.InstanceName = builder.Configuration["Redis:InstanceName"];
+});
 builder.Services.AddAuthorization();
-
 builder.Services.AddSwaggerGen(c =>
 {
 	var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
